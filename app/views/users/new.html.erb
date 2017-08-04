@@ -1,0 +1,44 @@
+
+
+<body class="no-padding reader-black-font" lang="zh-CN">
+  <div class="sign">
+    
+    <div class="main">
+      
+<h4 class="title">
+  <div class="normal-title">
+    <a class="" href="/signin">登录</a>
+    <b>·</b>
+    <a id="js-sign-up-btn" class="active" href="/signup">注册</a>
+  </div>
+</h4>
+<div class="js-sign-up-container">
+
+<%= form_for(@user) do |f| %>
+      <%= render 'shared/error_messages' %>
+      <div class="input-prepend restyle">
+        <%= f.text_field :name ,:placeholder => '你的昵称'%>
+      </div>
+
+      <div class="input-prepend restyle no-radius js-normal">
+        <%= f.text_field :email ,:placeholder => '你的邮箱'%>
+      </div>
+        <div class="input-prepend restyle no-radius js-normal">
+        <%= f.password_field :password ,:placeholder => '你的密码'%>
+      </div>
+      <div class="input-prepend">
+        <%= f.password_field :password_confirmation ,:placeholder => '再次输入密码'%>
+      </div>
+
+      <%= f.submit "注册", class: "sign-up-button" %>
+    <% end %>
+
+
+</div>
+
+    </div>
+  </div>
+
+
+
+

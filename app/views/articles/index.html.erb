@@ -1,0 +1,91 @@
+<!-- 头部区域 -->
+<nav class="navbar navbar-itcast navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_list" aria-expanded="false">
+          </button>
+          <a class="navbar-brand" href="#">
+            <%= image_tag 'logo' %>
+          </a>
+        </div>
+        <div id="nav_list" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <!-- <li class="#"><a href="#" >Project</a></li> -->
+            <li>
+              <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Photography
+                </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Design
+                </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Diary
+                </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+              </div>
+            </li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+      </div>
+</nav>
+
+<!-- 广告轮播 -->
+<section id="main_ad" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#main_ad" data-slide-to="0" class="active"></li>
+    <li data-target="#main_ad" data-slide-to="1"></li>
+    <li data-target="#main_ad" data-slide-to="2"></li>
+    <li data-target="#main_ad" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active" data-image-lg="slide_01_2000x410.jpg" data-image-xs="slide_01_640x340.jpg"></div>
+    <div class="item" data-image-lg="slide_02_2000x410.jpg" data-image-xs="slide_02_640x340.jpg"></div>
+    <div class="item" data-image-lg="slide_03_2000x410.jpg" data-image-xs="slide_03_640x340.jpg"></div>
+    <div class="item" data-image-lg="slide_04_2000x410.jpg" data-image-xs="slide_04_640x340.jpg"></div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#main_ad" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#main_ad" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</section>
+<!-- /广告轮播 -->
+<div class="container">
+  <div class="webSiteNotice">©2017 hymanwoo.com</div>
+</div>
+

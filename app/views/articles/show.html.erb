@@ -1,0 +1,54 @@
+<%= Gon::Base.render_data %>
+<div class="container">
+	<article class="post">
+	<h1 class="title"><%= @article.title %></h1>
+	<div class="date" >
+		<%= @article.created_at.year.to_s + '-' + @article.created_at.month.to_s + '-' + @article.created_at.day.to_s %>
+	</div>
+	<%= link_to "回到首页", root_path, class: "back_home" %>
+	<% if signed_in? %>
+    <%= link_to "编辑",edit_article_path(@article) %>
+    <%= link_to "删除", article_path(@article),method: :delete, data: { confirm: "确定删除这条博客吗?"} %>
+
+  <% end -%>
+	<!-- <a class="backtop" id="backtop">返回<br />顶部</a> -->
+	<div class="simditor border_none" id="show">
+		<div class="simditor-body content" id="show_content">
+		</div>
+	</div>
+	<div class="cl"></div>
+	<%= link_to "回到首页", root_path, class: "back_home" %>
+	<% if signed_in? %>
+	    <%= link_to "编辑",edit_article_path(@article) %>
+	    <%= link_to "删除", article_path(@article),method: :delete, data: { confirm: "确定删除这条博客吗?"} %>
+ 	<% end -%>
+</article>
+<div class="cl"></div>
+
+</div>
+
+<script type="text/javascript">
+	$(function(){
+		$("#backtop").hide();
+		 $(window).scroll(function(){
+	   var sc=$(window).scrollTop();
+	   var rwidth=$(window).width()
+	   if(sc>0){
+	    $("#backtop").show();
+	   }else{
+	    $("#backtop").hide();
+	   }
+	 })
+	 $("#backtop").click(function(){
+	   var sc=$(window).scrollTop();
+	   $('body,html').animate({scrollTop:0},500);
+	 })
+
+	 $("#show_content").html(gon.content);
+
+	})
+</script>
+
+
+
+
