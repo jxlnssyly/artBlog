@@ -24,7 +24,7 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'maruku'
 gem 'jquery-rails'
-
+gem 'qiniu' 
 gem 'simditor'
 gem 'carrierwave'
 gem 'mini_magick'

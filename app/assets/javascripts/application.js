@@ -15,4 +15,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
+//= require plugins/plupload/moxie
+//= require plugins/plupload/plupload.dev
+//= require plugins/qiniu/qiniu
 //= require_tree .

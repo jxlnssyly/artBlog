@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-    root to: 'articles#index'
+  root to: 'articles#index'
 
 
   get 'secrets/index'
@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   get 'users/new'
   
   post 'photos' => 'photos#upload'
+    match '/up', to: 'uploads#index', via: 'get'
 
   resources :users
   resources :articles
